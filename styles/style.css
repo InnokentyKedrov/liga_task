@@ -1,0 +1,157 @@
+@font-face {
+  font-family: Inter;
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: local("Inter");
+  src: url("../assets/fonts/Inter-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Inter;
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: local("Inter");
+  src: url("../assets/fonts/Inter-SemiBold.woff2") format("woff2");
+}
+
+.layout {
+  overflow: hidden;
+
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+
+  font-family: Inter, sans-serif;
+
+  background-color: #f9f9f9;
+}
+
+.layout__list {
+  display: grid;
+  grid-template:
+    "head item2 item2 item3 item4" 40% "head item2 item2 item5 item6" 185px
+    "description item8 item9 item5 item10" 247px / 458px 199px 165px 226px 232px;
+
+  /* grid-template-areas:
+    "head item2 item2 item3 item4"
+    "head item2 item2 item5 item6"
+    "description item8 item9 item5 item10"; */
+
+  /* grid-template-columns: 458px, 199px, 165px, 226px, 232px; */
+
+  /* grid-template-rows: 40%, 185px, 248px; */
+
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.layout__item {
+  object-fit: fill;
+}
+
+.layout__head {
+  display: flex;
+  grid-area: head;
+  flex-direction: column;
+}
+
+.layout__title {
+  display: block;
+
+  width: 330px;
+  margin: 125px auto 137px;
+
+  font-size: 64px;
+  font-weight: 600;
+}
+
+.social {
+  display: flex;
+  gap: 24px;
+
+  margin: 0 auto;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.social__link {
+  display: block;
+  height: 23px;
+  background-position: center;
+}
+
+.social__link_inst {
+  width: 23px;
+  background-image: url("../assets/icons/inst.svg");
+}
+
+.social__link_tel {
+  width: 23px;
+  background-image: url("../assets/icons/tel.svg");
+}
+
+.social__link_mail {
+  width: 29px;
+  background-image: url("../assets/icons/mail.svg");
+}
+
+.layout__item2 {
+  grid-area: item2;
+}
+
+.layout__item3 {
+  grid-area: item3;
+}
+
+.layout__item4 {
+  grid-area: item4;
+}
+
+.layout__item5 {
+  grid-area: item5;
+}
+
+.layout__item6 {
+  grid-area: item6;
+  background-color: #a61c1c;
+}
+
+.layout__description {
+  grid-area: description;
+
+  margin: 0;
+
+  font-size: 18px;
+  font-weight: 300;
+  color: #f2f2f2;
+
+  background-color: #828282;
+}
+
+.layout__text {
+  display: block;
+
+  width: 345px;
+  margin-top: 95px;
+  margin-right: 48px;
+  margin-left: 65px;
+}
+
+.layout__item8 {
+  grid-area: item8;
+}
+
+.layout__item9 {
+  grid-area: item9;
+  background-color: #a6806b;
+}
+
+.list__item10 {
+  grid-area: item10;
+}
