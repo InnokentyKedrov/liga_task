@@ -31,7 +31,7 @@
 .layout__list {
   display: grid;
   grid-template:
-    "head item2 item2 item3 item4" 40% "head item2 item2 item5 item6" 185px
+    "head item2 item2 item3 item4" 288px "head item2 item2 item5 item6" 185px
     "description item8 item9 item5 item10" 247px / 458px 199px 165px 226px 232px;
 
   /* grid-template-areas:
@@ -50,9 +50,9 @@
   list-style-type: none;
 }
 
-.layout__item {
+/* .layout__item {
   object-fit: fill;
-}
+} */
 
 .layout__head {
   display: flex;
@@ -64,17 +64,18 @@
   display: block;
 
   width: 330px;
-  margin: 125px auto 137px;
+  margin: 125px auto 136px;
 
   font-size: 64px;
   font-weight: 600;
+  line-height: 110%;
 }
 
 .social {
   display: flex;
   gap: 24px;
 
-  margin: 0 auto;
+  margin-left: 158px;
   padding: 0;
 
   list-style-type: none;
@@ -101,6 +102,28 @@
   background-image: url("../assets/icons/mail.svg");
 }
 
+.layout__description {
+  grid-area: description;
+
+  margin: 0;
+
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 125%;
+  color: #f2f2f2;
+
+  background-color: #828282;
+}
+
+.layout__text {
+  display: block;
+
+  width: 345px;
+  margin-top: 95px;
+  margin-right: 48px;
+  margin-left: 65px;
+}
+
 .layout__item2 {
   grid-area: item2;
 }
@@ -120,27 +143,6 @@
 .layout__item6 {
   grid-area: item6;
   background-color: #a61c1c;
-}
-
-.layout__description {
-  grid-area: description;
-
-  margin: 0;
-
-  font-size: 18px;
-  font-weight: 300;
-  color: #f2f2f2;
-
-  background-color: #828282;
-}
-
-.layout__text {
-  display: block;
-
-  width: 345px;
-  margin-top: 95px;
-  margin-right: 48px;
-  margin-left: 65px;
 }
 
 .layout__item8 {
