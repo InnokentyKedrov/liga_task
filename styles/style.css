@@ -114,10 +114,8 @@
 
 .layout__text {
   display: block;
-
   width: 345px;
   margin-top: 95px;
-  margin-right: 48px;
   margin-left: 65px;
 }
 
@@ -241,11 +239,6 @@
     margin: auto 40px;
   }
 
-  .layout__title {
-    width: 155px;
-    font-size: 30px;
-  }
-
   .layout__text {
     width: 100%;
     margin: auto 40px;
@@ -260,11 +253,6 @@
   .layout__head {
     flex-direction: column;
     gap: 32px;
-  }
-
-  .layout__title {
-    width: 100%;
-    text-align: center;
   }
 
   .layout__text {
