@@ -35,9 +35,6 @@
     "head item2 item2 item5 item6"
     "description item8 item9 item5 item10";
   grid-template-columns: 458px 199px 165px 226px 232px;
-
-  /* grid-template-rows: calc(100vw * 288 / 1280) calc(100vw * 185 / 1280) calc(100vw * 247 / 1280); */
-
   grid-template-rows: 288px 185px 247px;
 
   max-width: 1280px;
@@ -45,12 +42,6 @@
   padding: 0;
 
   list-style-type: none;
-}
-
-.layout__item {
-  /* overflow: hidden;
-
-  height: 100%; */
 }
 
 .layout__image {
@@ -167,8 +158,6 @@
 @media (width <= 1279px) {
   .layout__list {
     grid-template-columns: 36% 15.5% 13% 17.5% 18%;
-
-    /* grid-template-rows: calc(100vw * 288 / 1280) calc(100vw * 185 / 1280) calc(100vw * 247 / 1280); */
   }
 
   .layout__head {
@@ -205,10 +194,6 @@
       "item8 item9 item5 item10";
     grid-template-columns: 24.5% 22% 25.9% 28.5%;
     grid-template-rows: 288px 288px 185px 247px;
-
-    /* grid-template-rows: 288px calc(100vw * 288px / 1280px) calc(100vw * 185px / 1280px) calc(
-        100vw * 247px / 1280px
-      ); */
   }
 
   .layout__title {
@@ -268,18 +253,6 @@
 }
 
 @media (width <= 420px) {
-  /* .layout__list {
-    grid-template-areas:
-      "head head"
-      "description description"
-      "item2 item2"
-      "item8 item9"
-      "item3 item4"
-      "item5 item5"
-      "item6 item10";
-    grid-template-rows: 150px 150px 473px 247px 288px 433px 247px;
-  } */
-
   .layout__list {
     grid-template-rows: 160px 150px 473px 247px 288px 60px 247px;
   }
